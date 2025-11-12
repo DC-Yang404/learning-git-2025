@@ -38,24 +38,61 @@
  <a href="#firstpages">回到首页</a>
  <a href="www.baidu.com#bottom">跳转百度</a>
  <hr>
+
+
+
  <!-- form表单 -->
+  <fieldset>
+    <legend>信息</legend>
+    <form>
+        邮箱<input type="email" title="email"><br> 
+        数字<input type="number" title="number"><br>
+        文本<input type="text" title="text"><br>
+    </form>
+  </fieldset>
+  <!--  -->
+  <textarea name="" disabled></textarea>
+<br>
+<!-- 选择列表 -->
+  <select name="" >
+    <optgroup label="常州">
+        <!-- label=标签 -->
+        <option value="">武进区</option>
+        <option value="">丹阳区</option>
+    </optgroup>
+    <optgroup label="山西">
+        <option value="">钟楼区</option>
+        <option value="">平遥区</option>
+    </optgroup>
+  </select>
+
+
  <form action="">
-     <input type="text" title="text"><br>
-     <input type="number" title="number"><br>
-     <input type="email" title="email"><br>
      <input max="5" min="1" step="0.1" type="range"><br>
      <input type="color"><br>
-     <button>提交</button><br>
      <input type="file"><br>
-     <input type="radio" name="gender" value="male">男
-     <input type="radio" name="gender" value="female">女
+     <!-- label标签 -->
+     <label >
+        <input type="radio" name="gender" value="male">男
+     </label>
+     <input type="radio" name="gender" value="female" id="fm"><label for="fm">女</label>
      <input type="radio" name="gender" value="secret">保密
      <br>
-     <input type="checkbox" name="ydc1">
-     <input type="checkbox" name="ydc2">
-     <input type="checkbox" name="ydc3">
-  
- </form>
+     <input type="checkbox" name="BOX1">
+     <input type="checkbox" name="BOX2">
+     <input type="checkbox" name="BOX3">
+     <br>
+     <input type="reset">
+     <input type="submit">
+     <input type="button" value="重新提交">
+    </form>
+<hr>
+    <form action="https://cn.bing.com/search" target="_blank">
+        <input type="text" name="username">
+        <button>搜索</button>
+        <input type="reset">
+    </form>
+<hr>
 
  
 
