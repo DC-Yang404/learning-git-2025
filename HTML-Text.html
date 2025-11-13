@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title >首页</title>
+    <title>首页</title>
 </head>
 
 <body>
     <h1 id="firstpages">HTML</h1>
     <!-- a链接 -->
     <a target="_blank" href="https://www.bilibili.com/">哔哩哔哩</a>(新标签打开)<br>
-    <a target="_self"  href="https://www.bilibili.com/">哔哩哔哩</a>(当前标签打开)<br>
-<!-- 有序和无序列表 -->
+    <a target="_self" href="https://www.bilibili.com/">哔哩哔哩</a>(当前标签打开)<br>
+    <!-- 有序和无序列表 -->
     <ol>
         <li><strong>荒野大镖客—救赎</strong></li>
         <li><b>生化危机4</b></li>
@@ -22,8 +23,10 @@
         <li><em>lyq</em></li>
         <li><mark>gyq</mark></li>
     </ul>
-    
-    <img width="100" height="80" src="https://i1.hdslb.com/bfs/sycp/sanlian/image/123454d1518344158553d018e2d4d605.jpeg@672w_378h_1c_!web-home-common-cover.avif" alt="哔哩哔哩首页">
+
+    <img width="100" height="80"
+        src="https://i1.hdslb.com/bfs/sycp/sanlian/image/123454d1518344158553d018e2d4d605.jpeg@672w_378h_1c_!web-home-common-cover.avif"
+        alt="哔哩哔哩首页">
     <dl>
         <dt title="game" tabindex="1">游戏</dt>
         <dd title="three action" tabindex="3">三角洲行动</dd>
@@ -31,79 +34,165 @@
         <dd>荒野求生</dd>
     </dl>
 
-<div>sdjfgschusbdcbsd</div>
-<span>hsdcbsiuvhsd</span>
-<br>
-<!-- a标签跳转 -->
- <a href="#firstpages">回到首页</a>
- <a href="www.baidu.com#bottom">跳转百度</a>
- <hr>
+    <div>sdjfgschusbdcbsd</div>
+    <span>hsdcbsiuvhsd</span>
+    <br>
+    <!-- a标签跳转 -->
+    <a href="#firstpages">回到首页</a>
+    <a href="www.baidu.com#bottom">跳转百度</a>
+    <hr>
 
 
 
- <!-- form表单 -->
-  <fieldset>
-    <legend>信息</legend>
-    <form>
-        邮箱<input type="email" title="email"><br> 
-        数字<input type="number" title="number"><br>
-        文本<input type="text" title="text"><br>
+    <!-- form表单 -->
+    <fieldset>
+        <legend>信息区域</legend>
+        <form>
+            邮箱<input type="email" title="email"><br>
+            数字<input type="number" title="number"><br>
+            文本<input type="text" autofocus title="text"><br>
+            密码<input type="password"><br>
+            不可用<input type="text" disabled><br>
+            隐藏<input type="hidden">
+        </form>
+    </fieldset>
+
+    <!-- 文本区域 -->
+    <textarea name="" maxlength="5"></textarea><br>
+
+
+    <!-- 选择列表 -->
+    <select name="">
+        <optgroup label="常州"><!-- label=标签 -->
+            <option value="" disabled>武进区</option>
+            <option value="">丹阳区</option>
+        </optgroup>
+        <optgroup label="山西">
+            <option value="" selected>钟楼区</option>
+            <option value="">平遥区</option>
+        </optgroup>
+    </select>
+
+
+    <form action="">
+
+        <input type="range" max="5" min="1" step="0.1"><br>
+        <input type="color"><br>
+        <input type="file" accept="image/*,.js" multiple><br>
+
+        <!-- label标签-点击文字选择 -->
+        <label>
+            <input type="radio" name="gender" value="male">男
+        </label>
+
+        <input type="radio" name="gender" value="female" id="fm"><label for="fm">女</label>
+        <input type="radio" name="gender" value="secret" id="st"><label for="st">保密</label><br>
+
+        <input type="checkbox" name="BOX1">
+        <input type="checkbox" name="BOX2">
+        <input type="checkbox" name="BOX3"><br>
+        <!-- input -->
+        <input type="reset">
+        <input type="submit">
+        <input type="button" value="重新提交"><br>
+        <!-- button -->
+        <button><u>提交</u></button>
+
+
     </form>
-  </fieldset>
-  <!--  -->
-  <textarea name="" disabled></textarea>
-<br>
-<!-- 选择列表 -->
-  <select name="" >
-    <optgroup label="常州">
-        <!-- label=标签 -->
-        <option value="">武进区</option>
-        <option value="">丹阳区</option>
-    </optgroup>
-    <optgroup label="山西">
-        <option value="">钟楼区</option>
-        <option value="">平遥区</option>
-    </optgroup>
-  </select>
 
-
- <form action="">
-     <input max="5" min="1" step="0.1" type="range"><br>
-     <input type="color"><br>
-     <input type="file"><br>
-     <!-- label标签 -->
-     <label >
-        <input type="radio" name="gender" value="male">男
-     </label>
-     <input type="radio" name="gender" value="female" id="fm"><label for="fm">女</label>
-     <input type="radio" name="gender" value="secret">保密
-     <br>
-     <input type="checkbox" name="BOX1">
-     <input type="checkbox" name="BOX2">
-     <input type="checkbox" name="BOX3">
-     <br>
-     <input type="reset">
-     <input type="submit">
-     <input type="button" value="重新提交">
-    </form>
-<hr>
     <form action="https://cn.bing.com/search" target="_blank">
-        <input type="text" name="username">
+        <input type="text" name="username" placeholder="请输入要搜索的内容" required>
         <button>搜索</button>
         <input type="reset">
     </form>
-<hr>
+    <hr>
+    <!-- html实体  转义符 -->
+    空格:spen&nbsp;&nbsp;&#160;spen
+    &lt;&gt;
+    <pre>
+        chadcabc
+        cdmskcdcc c ds cd c dsc ds c 
+    </pre>
+    <hr>
+    表格<br>
+    <table border="1" cellspacing="0" bordercolor="red">
+        <caption>信息表</caption>
+        <col bgcolor="green">
+        <colgroup bgcolor="yellow">
+        <col>
+        <col>
+        </colgroup>
+        <tbody>
+            <thead>
+                <tr>
+                    <th bgcolor="red">name</th>
+                    <th>number</th>
+                    <th>gender</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>zhangsan</td>
+                <td headers="name,number">2025</td>
+                <td>male</td>
+            </tr>
+            <tr>
+                <td>lisi</td>
+                <td headers="name,number">2026</td>
+                <td bgcolor="blue">female</td>
+            </tr>
+            <tr>
+                <td>wangwu</td>
+                <td headers="name,number">2027</td>
+                <td>secret</td>
+            </tr>
+        <tfoot></tfoot>
+        </tbody>
+    </table><br>
+    <!-- 合并行,列 -->
+    <table border="1">
+        <tbody>
+            <tr>
+                <td colspan="2">fdgd</td>
+                <td rowspan="2">sdv</td>
+            </tr>
+            <tr>
+                <td rowspan="2">vsdv</td>
+                <td>vwv</td>
+            </tr>
+            <tr>
+                <td colspan="2">vwwvw</td>
+            </tr>
+        </tbody>
+    </table><hr>
+    <marquee behavior="" direction="">yyds</marquee>
 
- 
 
- 
-
-
-
-
-
-
-
+    <a href="https://www.bing.com/" target="f1">百度</a><br>
+    <a href="https://www.baidu.com/" target="xxxx">baidu</a>
+    <a href="https://www.douban.com/" target="xxxx">douban</a>
+    <iframe src="https://www.baidu.com/" frameborder="0" name="f1"></iframe><br>
+    p<sub>3</sub>+x<sup>6</sup>
+    <code>asxasxac</code>
+    <pre>bdcsjbdsb cksjdbcsbd cksdbcisubc cjhsdbclus</pre>
+    <video src="C:\Users\DongChen-Yang\Desktop/025-11-14 023639.mp4" width="250" controls ></video>
+    <audio src="" controls></audio>
+    html的语义化
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
+
 </html>
