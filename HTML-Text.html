@@ -5,10 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>首页</title>
+    <style>
+        p{
+            color: blueviolet;
+        }
+        .three{
+            color: aquamarine;
+        }
+        #firstpages{
+            color: blue;
+            font-size: 40px;
+        }
+
+        :hover{
+            color: brown;
+        }
+        :active{
+            border: 5px solid;
+        }
+        :focus{
+            background-color: chartreuse;
+        }
+        :link{
+            color: yellow;
+        }
+        :visited{
+            color: tomato;
+        }
+        :first-child{
+            border: 5px solid;
+        }
+        :last-child{
+
+        }
+        :nth-child(2n+1){
+
+        }
+        :nth-child(odd){
+
+        }
+        :nth-child(even){
+
+        }
+        :empty{
+
+        }
+        :not(:empty){
+
+        }
+
+
+
+
+    </style>
 </head>
 
 <body>
     <h1 id="firstpages">HTML</h1>
+    <p>jcbabcacjbcn</p>
     <!-- a链接 -->
     <a target="_blank" href="https://www.bilibili.com/">哔哩哔哩</a>(新标签打开)<br>
     <a target="_self" href="https://www.bilibili.com/">哔哩哔哩</a>(当前标签打开)<br>
@@ -29,7 +83,7 @@
         alt="哔哩哔哩首页">
     <dl>
         <dt title="game" tabindex="1">游戏</dt>
-        <dd title="three action" tabindex="3">三角洲行动</dd>
+        <dd class="three action" title="" tabindex="3">三角洲行动</dd>
         <dd title="英雄联盟" tabindex="2">lol</dd>
         <dd>荒野求生</dd>
     </dl>
@@ -166,6 +220,7 @@
             </tr>
         </tbody>
     </table><hr>
+
     <marquee behavior="" direction="">yyds</marquee>
 
 
@@ -179,21 +234,6 @@
     <video src="C:\Users\DongChen-Yang\Desktop/025-11-14 023639.mp4" width="250" controls ></video>
     <audio src="" controls></audio>
     html的语义化
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 
 </html>
